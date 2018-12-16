@@ -81,7 +81,7 @@ namespace Plant {
     }
 	
 	//% blockId="smarthon_get_humidity" 
-    //% block="Get humidity (%)"
+    //% block="Get humidity"
     //% weight=76	
 
     export function getHumidity(): number {
