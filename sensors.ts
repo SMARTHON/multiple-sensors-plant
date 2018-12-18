@@ -97,7 +97,7 @@ namespace Plant {
     }
 	
 	//% blockId="smarthon_usb"
-    //% block="Set USB to intensity %intensity"
+    //% block="Set LED grow light to intensity %intensity"
     //% intensity.min=0 intensity.max=1023
     //% weight=50	
 	//%subcategory=More
