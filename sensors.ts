@@ -7,7 +7,7 @@ namespace Plant {
 	let soilMoisture_variable = 0
 	
     // -------------- 1. Initialization ----------------
-    //%blockId=initialize
+    //%blockId=initialize_plant
     //%block="Initialize Smarthon multiple-sensor"
     //% weight=90	
     export function initializeWifi(): void {
@@ -48,7 +48,7 @@ namespace Plant {
         basic.pause(5000);
     }
 
-    //% blockId="smarthon_get_light" 
+    //% blockId="smarthon_get_light_plant" 
     //% block="Get light (Lx)"
     //% weight=80	
 
@@ -56,7 +56,7 @@ namespace Plant {
         return light_variable;
     }
 
-    //% blockId="smarthon_get_temperature" 
+    //% blockId="smarthon_get_temperature_plant" 
     //% block="Get temperature (°C)"
     //% weight=79
 
@@ -80,7 +80,7 @@ namespace Plant {
         return altitude_variable;
     }
 	
-	//% blockId="smarthon_get_humidity" 
+	//% blockId="smarthon_get_humidity_plant" 
     //% block="Get humidity"
     //% weight=76	
 
