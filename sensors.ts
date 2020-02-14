@@ -119,11 +119,26 @@ namespace Plant {
 			
 		pins.analogWritePin(AnalogPin.P1, intensity);
     }
+    
+    
+//% blockId="smarthon_waterpump_time"
+    //% block="Set Water pump to intensity %intensity for %pumpingtime second"
+    //% intensity.min=0 intensity.max=1023
+    //% weight=48
+	//%subcategory=More
+	//% blockGap=7	
 	
+    export function TurnWaterpump_time(intensity: number, pumpingtime: number): void {
+			
+        pins.analogWritePin(AnalogPin.P1, intensity);
+        basic.pause(1000 * pumpingtime)
+        pins.analogWritePin(AnalogPin.P1, 0);
+    }
+
 	//% blockId="smarthon_humdifier"
     //% block="Set Humdifier to intensity %intensity"
     //% intensity.min=0 intensity.max=1023
-    //% weight=48	
+    //% weight=47
 	//%subcategory=More
 	//% blockGap=7	
 	
@@ -136,7 +151,7 @@ namespace Plant {
 	//% blockId="smarthon_plantmotorfan_cw"
     //% block="Set Motor fan clockwisely to intensity %intensity"
     //% intensity.min=0 intensity.max=1023
-    //% weight=47	
+    //% weight=46
 	//%subcategory=More
 	//% blockGap=7	
 	
@@ -148,7 +163,7 @@ namespace Plant {
 	//% blockId="smarthon_plantmotorfan_acw"
     //% block="Set Motor fan anti-clockwisely to intensity %intensity"
     //% intensity.min=0 intensity.max=1023
-    //% weight=46
+    //% weight=45
 	//%subcategory=More
 	
     export function TurnMotorACW(intensity: number): void {
@@ -159,7 +174,7 @@ namespace Plant {
 	//% blockId="smarthon_plantservo"
     //% block="Set Servo to degree %degree"
     //% intensity.min=0 intensity.max=180
-    //% weight=45	
+    //% weight=44
 	//%subcategory=More
 	//% blockGap=7	
 	
@@ -172,7 +187,7 @@ namespace Plant {
 	//% blockId="smarthon_plantled"
     //% block="Set LED to intensity %intensity"
     //% intensity.min=0 intensity.max=1023
-    //% weight=44
+    //% weight=43
 	//%subcategory=More
 	
     export function TurnLED(intensity: number): void {
