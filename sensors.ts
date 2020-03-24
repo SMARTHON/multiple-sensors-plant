@@ -99,11 +99,11 @@ namespace Plant {
 	
 	
 	//% blockId="smarthon_log_data_excel" 
-    //% block="(radio receiver) Log the data to excel field 1 %field1 field 2 %field2 field3 %field3"
+    //% block="(radio receiver) Log the data to excel field 1 %field1 field 2 %field2 field 3 %field3"
     //% weight=70
 
     export function logData_excel(field1:number, field2:number, field3:number): void {
-        serial.writeLine( input.runningTime() / 1000 + "," + field1 + "," + field2 + "," + field3)
+        serial.writeLine(input.runningTime() / 1000 + "," + field1 + "," + field2 + "," + field3)
     }
 	
 	
