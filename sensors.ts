@@ -96,6 +96,19 @@ namespace Plant {
         return soilMoisture_variable;
     }
 	
+	
+	
+	//% blockId="smarthon_log_data_excel" 
+    //% block="(radio receiver) Log the data to excel field 1 %field1 field 2 %field2 field3 %field3"
+    //% weight=70
+
+    export function logData_excel(field1:number, field2:number, field3:number): void {
+        serial.writeLine( input.runningTime() / 1000 + "," + field1 + "," + field2 + "," + field3)
+    }
+	
+	
+	
+	
 	//% blockId="smarthon_usb"
     //% block="Set LED grow light to intensity %intensity"
     //% intensity.min=0 intensity.max=1023
