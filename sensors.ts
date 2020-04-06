@@ -103,7 +103,7 @@ namespace Plant {
     //% weight=70
 
     export function logData_excel(field1:number, field2:number, field3:number): void {
-        serial.writeLine(input.runningTime() / 1000 + "," + field1 + "," + field2 + "," + field3)
+        serial.writeLine(field1 + "," + field2 + "," + field3)
     }
 	
 	
