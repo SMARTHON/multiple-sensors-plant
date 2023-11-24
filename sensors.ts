@@ -163,7 +163,7 @@ namespace Plant {
 		
 	//% blockId="smarthon_plantmotorfan_cw"
     //% block="Set Motor fan clockwisely to intensity %intensity"
-    //% intensity.min=0 intensity.max=1023
+    //% intensity.min=0 intensity.max=1022
     //% weight=46
 	//%subcategory=More
 	//% blockGap=7	
@@ -175,7 +175,7 @@ namespace Plant {
 	
 	//% blockId="smarthon_plantmotorfan_acw"
     //% block="Set Motor fan anti-clockwisely to intensity %intensity"
-    //% intensity.min=0 intensity.max=1023
+    //% intensity.min=0 intensity.max=1022
     //% weight=45
 	//%subcategory=More
 	
